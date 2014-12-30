@@ -7,6 +7,14 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+        <div>
+            <h4>Main menu</h4>
+            <ul>
+                <li><a href="{{ path('homepage') }}">Red</a></li>
+                <li><a href="{{ path('green') }}">Green</a></li>
+                <li><a href="{{ path('blue') }}">Blue</a></li>
+            </ul>
+        </div>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>

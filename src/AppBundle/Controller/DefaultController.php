@@ -10,8 +10,25 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="homepage")
      */
-    public function indexAction()
+    public function redAction()
     {
-        return $this->render('default/index.html.twig');
+        return $this->render('default/red.html.twig');
     }
+
+    /**
+     * @Route("/green.html", name="green")
+     */
+    public function greenAction()
+    {
+        return $this->render('default/green.html.twig');
+    }
+
+    /**
+     * @Route("/blue.html", name="blue")
+     */
+    public function blueAction()
+    {
+        return $this->render('default/blue.html.twig');
+    }
+
 }
